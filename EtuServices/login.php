@@ -31,7 +31,6 @@
 
 <body>
 
-<h1>Voici la page de connexion</h1>
 
 
 <form action="login.php"  method="post">
@@ -70,7 +69,8 @@
             $result=mysqli_query($conn, $sql);
 
             if(mysqli_num_rows($result)==1){
-                exec("python connectionRedis.py", $output);
+                echo "connexion ok --> normalement appel de la fonction connection() du fichier python pour vérifier le nb de connection.";
+                echo "ensuite aller sur le fichier accueil.php si connexion valide (pas 10 connexions en 10min)";
             }
             else{
                 echo "identifiant ou mdp invalide";

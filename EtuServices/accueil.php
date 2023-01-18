@@ -24,28 +24,34 @@
   ?> 
 
 
-
-<header>
-    <h1>Login</h1>
-</header>
-
 <body>
 
 <h1>Accueil</h1>
 
 
-<form action="login.php"  method="post">
+<form action="accueil.php"  method="post">
     <div>
-        <label for="email">Email :</label>
-        <input type="text" name="email">
+        <input type="submit" value="Achat" name="achat">
     </div>
+</form>
+
+
+<form action="accueil.php"  method="post">
     <div>
-        <label for="mdp">Mot de passe :</label>
-        <input type="mdp" name="mdp">
+        <input type="submit" value="Vente" name="vente">
     </div>
-    <div>
-        <input type="submit" value="Connexion" name="submit">
-    </div>
+</form>
+
+
 </body>
 
 <?php
+
+
+    if(isset($_POST['achat'])){
+        echo "appeler la fonction achat() du fichier python pour vérifier le nombre d'achats";
+    }
+
+    if(isset($_POST['vente'])){
+        echo "appeler la fonction vente() du fichier python pour vérifier le nombre d'achats";
+    }
