@@ -18,7 +18,7 @@ A noter que ce projet a été fait en 4h, la partie qui reliait le HTML/CSS aux 
 Pour la page de connexion et les pages de services, j'ai utilisé un code simple avec du PHP et HTML.
 Il vous faut une bdd simple de la forme suivante :
 
-![Schéma_bdd](table.jpg "Table de la bdd")
+![Schéma_bdd](table.png "Table de la bdd")
 
 Il suffit ensuite de faire une requête sql pour vérifier si l'identifiant et le mdp sont corrects, pour accepter la connexion.
 
